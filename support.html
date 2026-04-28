@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fast Image Text Scanner Support</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg-start: #eef4ff;
+        --bg-end: #f9fbff;
+        --panel: rgba(255, 255, 255, 0.92);
+        --panel-strong: #ffffff;
+        --text: #14253d;
+        --muted: #5c6f8a;
+        --line: rgba(74, 103, 152, 0.16);
+        --accent: #2563eb;
+        --accent-soft: rgba(37, 99, 235, 0.1);
+        --shadow: 0 24px 64px rgba(28, 56, 108, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 34%),
+          linear-gradient(180deg, var(--bg-start), var(--bg-end));
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 72px;
+      }
+
+      .panel {
+        padding: 30px 32px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 16px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(32px, 5vw, 46px);
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: clamp(24px, 4vw, 32px);
+      }
+
+      h3 {
+        margin: 0 0 8px;
+        font-size: 20px;
+      }
+
+      p,
+      li {
+        margin: 0 0 12px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .lede {
+        max-width: 760px;
+        margin: 14px 0 0;
+        font-size: 18px;
+        color: var(--muted);
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .meta-card,
+      .card {
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--panel-strong);
+      }
+
+      .meta-label {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .meta-value {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .section {
+        margin-top: 22px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .footer {
+        margin-top: 28px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          width: min(100% - 20px, 980px);
+          padding-top: 18px;
+          padding-bottom: 48px;
+        }
+
+        .panel {
+          padding: 22px 18px;
+          border-radius: 22px;
+        }
+
+        .meta,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <p class="eyebrow">Support</p>
+        <h1>Fast Image Text Scanner Support</h1>
+        <p class="lede">
+          Help for scanning text from photos, importing images, managing local
+          scan history, troubleshooting OCR results, and contacting support.
+        </p>
+
+        <div class="meta">
+          <div class="meta-card">
+            <span class="meta-label">App</span>
+            <div class="meta-value">Fast Image Text Scanner</div>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Support Email</span>
+            <div class="meta-value">
+              <a href="mailto:zengjianchi@outlook.com">zengjianchi@outlook.com</a>
+            </div>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Developer</span>
+            <div class="meta-value">zengjianchi</div>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Response Time</span>
+            <div class="meta-value">Usually within 3 business days</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Before You Contact Us</h2>
+          <p>
+            The tips below solve most common issues with image import, OCR
+            accuracy, and saved scan history.
+          </p>
+
+          <div class="grid">
+            <article class="card">
+              <h3>Camera or Photos access</h3>
+              <p>
+                If the app cannot open the camera or photo library, check your
+                device settings and make sure access has been granted for Fast
+                Image Text Scanner.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>OCR result quality</h3>
+              <p>
+                Text recognition works best with sharp images, strong lighting,
+                high contrast, and text that is not heavily tilted, blurred, or
+                blocked.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Saved scan history</h3>
+              <p>
+                Recent scans are stored locally on your device for quick access.
+                If you delete the app or clear local data, saved history may no
+                longer be available.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Frequently Asked Questions</h2>
+
+          <article class="card">
+            <h3>How do I scan text from a photo?</h3>
+            <p>
+              Open the app, choose the camera or import option, select or
+              capture an image, and wait for the text extraction to finish. You
+              can then review, edit, copy, or share the result.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Can I scan more than one image at a time?</h3>
+            <p>
+              Yes. The app supports batch import so you can convert multiple
+              images in one flow and review the results together.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Why does the extracted text contain mistakes?</h3>
+            <p>
+              OCR accuracy can vary depending on image quality, handwriting,
+              unusual fonts, glare, shadows, perspective distortion, or mixed
+              languages in one image. Retaking the photo more clearly usually
+              improves results.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Where is my data stored?</h3>
+            <p>
+              Scan history and related app data are generally stored locally on
+              your device. For more details, please read our
+              <a href="./privacyPolicy.html">Privacy Policy</a>.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Why am I seeing ads?</h3>
+            <p>
+              Some versions of the app may include advertising services to
+              support development and distribution. If you see an issue related
+              to an ad, please include a screenshot and a short description in
+              your support email.
+            </p>
+          </article>
+        </div>
+
+        <div class="section">
+          <h2>How To Reach Support</h2>
+          <p>
+            Email us at
+            <a href="mailto:zengjianchi@outlook.com">zengjianchi@outlook.com</a>.
+          </p>
+          <p>To help us investigate faster, please include:</p>
+          <ul>
+            <li>Your device model and OS version</li>
+            <li>The app version you are using</li>
+            <li>A short description of the issue</li>
+            <li>Screenshots or screen recordings if available</li>
+            <li>Steps we can follow to reproduce the problem</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Related Links</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Privacy Policy</h3>
+              <p>
+                Review how Fast Image Text Scanner handles permissions, local
+                storage, and support requests.
+              </p>
+              <p><a href="./privacyPolicy.html">Open Privacy Policy</a></p>
+            </article>
+
+            <article class="card">
+              <h3>App Store Support URL</h3>
+              <p>
+                If you publish this page, use its public `https://` address as
+                the Support URL in App Store Connect.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <p class="footer">Last updated: April 28, 2026</p>
+      </section>
+    </main>
+  </body>
+</html>

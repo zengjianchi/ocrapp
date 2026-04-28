@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fast Image Text Scanner Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg-start: #eaf2ff;
+        --bg-end: #f6f9ff;
+        --panel: rgba(255, 255, 255, 0.9);
+        --panel-strong: #ffffff;
+        --text: #132238;
+        --muted: #5a6b84;
+        --line: rgba(74, 103, 152, 0.16);
+        --accent: #2563eb;
+        --accent-soft: rgba(37, 99, 235, 0.1);
+        --shadow: 0 24px 64px rgba(28, 56, 108, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(37, 99, 235, 0.15), transparent 34%),
+          linear-gradient(180deg, var(--bg-start), var(--bg-end));
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 72px;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 16px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(32px, 5vw, 46px);
+      }
+
+      h2 {
+        font-size: clamp(26px, 4vw, 34px);
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 20px;
+        margin: 26px 0 12px;
+      }
+
+      p,
+      li {
+        margin: 0 0 12px;
+      }
+
+      ul {
+        margin: 0 0 4px 22px;
+        padding: 0;
+      }
+
+      .lede {
+        max-width: 760px;
+        margin: 14px 0 0;
+        font-size: 18px;
+        color: var(--muted);
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .meta-card {
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--panel-strong);
+      }
+
+      .meta-label {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .meta-value {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .panel {
+        padding: 30px 32px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+        margin: 18px 0 4px;
+      }
+
+      .callout {
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), #f8fbff);
+      }
+
+      .callout strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+        overflow: hidden;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+      }
+
+      .table th,
+      .table td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .table th {
+        background: rgba(37, 99, 235, 0.06);
+        font-size: 13px;
+      }
+
+      .table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          width: min(100% - 20px, 980px);
+          padding-top: 18px;
+          padding-bottom: 48px;
+        }
+
+        .panel {
+          padding: 22px 18px;
+          border-radius: 22px;
+        }
+
+        .meta,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel" lang="en">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Fast Image Text Scanner Privacy Policy</h1>
+        <p class="lede">
+          This Privacy Policy explains how we handle information when you use
+          Fast Image Text Scanner, including on-device image processing, local
+          history storage, permissions, and any advertising services enabled in
+          the app.
+        </p>
+
+        <div class="meta">
+          <div class="meta-card">
+            <span class="meta-label">Effective Date</span>
+            <div class="meta-value">April 1, 2026</div>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Developer</span>
+            <div class="meta-value">zengjianchi</div>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Contact</span>
+            <div class="meta-value">zengjianchi@outlook.com</div>
+          </div>
+        </div>
+        <p>
+          zengjianchi ("we", "our", or "us") respects your privacy. This
+          Privacy Policy explains how Fast Image Text Scanner collects, uses,
+          stores, shares, and protects information, and how you can contact us.
+        </p>
+
+        <div class="grid">
+          <div class="callout">
+            <strong>Scope</strong>
+            This policy applies to Fast Image Text Scanner on iPhone, iPad,
+            Android devices, and related support pages for this product.
+          </div>
+          <div class="callout">
+            <strong>Core Principle</strong>
+            Image recognition is performed on-device by default. We do not upload
+            the images you process or the recognized text to our own servers
+            unless a feature clearly says so and you choose to use it.
+          </div>
+        </div>
+
+        <h3>1. Information We May Process</h3>
+        <ul>
+          <li>
+            Information you provide directly, such as your email address and the
+            contents of support requests, feedback, or appeals.
+          </li>
+          <li>
+            Images you choose to import, capture, or process, as well as the text
+            recognized from those images.
+          </li>
+          <li>
+            History items, preferences, and simple usage state that you choose to
+            keep in the app.
+          </li>
+          <li>
+            Device and diagnostic information, such as device model, operating
+            system version, basic performance data, and crash-related signals
+            generated by the system or SDKs when necessary.
+          </li>
+          <li>
+            Advertising-related information. If ads are enabled in the app,
+            advertising SDKs may process device identifiers, ad interaction
+            events, approximate location data, or other signals used to deliver
+            and measure ads.
+          </li>
+        </ul>
+
+        <h3>2. How We Use Information</h3>
+        <ul>
+          <li>
+            To provide core features such as image import, camera capture, batch
+            recognition, result viewing, text copying, and system sharing.
+          </li>
+          <li>
+            To store history, imported image copies, and preference settings on
+            your device so you can continue where you left off.
+          </li>
+          <li>
+            To maintain app stability, troubleshoot issues, and improve the user
+            experience.
+          </li>
+          <li>
+            To respond to support questions, operational requests, and compliance
+            matters.
+          </li>
+          <li>
+            To handle security, abuse prevention, and legal obligations where
+            permitted or required by law.
+          </li>
+        </ul>
+
+        <h3>3. Local Processing and Uploads</h3>
+        <p>
+          For image recognition features, Fast Image Text Scanner processes
+          selected images on-device by default. Recognition results, history
+          items, and related preferences are typically stored locally on your
+          device for later viewing or editing.
+        </p>
+        <p>
+          We do not upload the images you process, the recognized text, or your
+          local history to our own servers unless a feature explicitly says it
+          requires an upload and you intentionally trigger that action.
+        </p>
+        <p>
+          If you use the system share sheet to send results to another app, email
+          service, or cloud provider, that onward processing is governed by the
+          privacy policy of the service you choose.
+        </p>
+
+        <h3>4. Permissions</h3>
+        <ul>
+          <li>
+            Camera permission: used when you choose to capture an image for
+            processing.
+          </li>
+          <li>
+            Photos or media library permission: used when you choose to import an
+            image from your device.
+          </li>
+        </ul>
+        <p>
+          We do not continuously access your camera or photo library without your
+          action. You can disable these permissions at any time in system
+          settings, although doing so may limit related features.
+        </p>
+
+        <h3>5. Advertising and Third-Party Services</h3>
+        <p>
+          If the app displays banner ads, rewarded ads, or other advertising
+          content, the ad provider may process device identifiers, ad requests,
+          impression and click events, and related signals used for ad delivery
+          and measurement under its own privacy practices.
+        </p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Purpose</th>
+              <th>Privacy Policy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google AdMob</td>
+              <td>Banner ads, rewarded ads, ad delivery, and measurement</td>
+              <td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
+            </tr>
+            <tr>
+              <td>Apple App Store / Google Play</td>
+              <td>App distribution, downloads, updates, and platform services</td>
+              <td>
+                <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a><br />
+                <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>6. Data Retention and Deletion</h3>
+        <p>
+          If you keep recognition history, batch queues, preferences, or imported
+          image copies in the app, that data is typically stored locally on your
+          device until you delete the content, clear the app's data, or uninstall
+          the app.
+        </p>
+        <p>
+          If you contact us through email or another support channel, we may
+          retain the related correspondence for a reasonable period to handle
+          follow-up issues, comply with legal obligations, and support necessary
+          security or audit needs.
+        </p>
+
+        <h3>7. Data Sharing</h3>
+        <p>
+          We do not voluntarily disclose the images or recognized text you
+          process in the app except in the following situations:
+        </p>
+        <ul>
+          <li>You ask us to do so through a sharing, export, or similar action.</li>
+          <li>
+            Third-party providers process limited technical data as necessary to
+            support ads, distribution, diagnostics, or other essential services.
+          </li>
+          <li>Disclosure is required by law, regulation, or legal process.</li>
+          <li>
+            Disclosure is reasonably necessary to protect users, the public, us,
+            or others from harm, abuse, fraud, or security threats.
+          </li>
+        </ul>
+
+        <h3>8. Data Security</h3>
+        <p>
+          We use reasonable technical and organizational measures to help protect
+          information, including data minimization, local-first storage where
+          practical, permission controls, and review of third-party services.
+          However, no method of transmission or storage can be guaranteed to be
+          completely secure.
+        </p>
+
+        <h3>9. Your Rights</h3>
+        <p>
+          Depending on the privacy laws that apply where you live, you may have
+          rights to request access to, correction of, deletion of, export of, or
+          restrictions on the processing of your personal information. You may
+          also have the right to withdraw consent or lodge a complaint. Please
+          contact us at zengjianchi@outlook.com.
+        </p>
+        <p>
+          For content stored only on your device, you can usually remove it
+          directly by deleting history items, clearing app data, or uninstalling
+          the app.
+        </p>
+        <p>
+          If the app shows ads, you may also have choices about personalized
+          advertising in regions where consent or opt-out controls are required,
+          whether through in-app prompts, device settings, or tools offered by
+          the ad provider.
+        </p>
+
+        <h3>10. Children's Privacy</h3>
+        <p>
+          Fast Image Text Scanner is not specifically directed to children. We do
+          not knowingly collect personal information from children as defined by
+          applicable law. If you believe a child has provided personal
+          information without appropriate consent, please contact us and we will
+          take reasonable steps to address the issue.
+        </p>
+
+        <h3>11. Changes to This Policy</h3>
+        <p>
+          We may update this Privacy Policy from time to time. The updated
+          version will be posted on this page together with a revised effective
+          date. If a change is material, we may also provide notice through the
+          app, release notes, or another reasonable method.
+        </p>
+
+        <h3>12. Contact Us</h3>
+        <p>
+          If you have any questions or privacy-related requests, please contact
+          us at:
+        </p>
+        <p>
+          zengjianchi<br />
+          zengjianchi@outlook.com
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
